@@ -1,40 +1,8 @@
+# Steps to Start the App
 
-A Full Stack Chatting App.
-Uses Socket.io for real time communication and stores user details in encrypted format in Mongo DB Database.
-## Tech Stack
-
-**Client:** React JS
-
-**Server:** Node JS, Express JS
-
-**Database:** Mongo DB
-
-Go to the project directory
-
-```bash
-  cd mern-chat-app
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-```bash
-  cd frontend/
-  npm install
-```
-
-Start the server
-
-```bash
-  npm run start
-```
-Start the Client
-
-```bash
-  //open now terminal
-  cd frontend
-  npm start
-```
+## Install the Public Dependencies
+## Install the Server Dependencies
+## In the Server Directory there's a .env file. Change the value of mongodb inside the file. Set the value as your mongodb connection url.
+## Now start the server by yarn start
+## Now start the react by yarn start
+## And the chat application would be running successfully by now.
