@@ -1,15 +1,18 @@
-import "./App.css";
-import Homepage from "./Pages/Homepage";
-import { Route } from "react-router-dom";
-import Chatpage from "./Pages/Chatpage";
-
-function App() {
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SetAvatar from "./components/SetAvatar";
+import Chat from "./pages/Chat";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+export default function App() {
   return (
-    <div className="App">
-      <Route path="/" component={Homepage} exact />
-      <Route path="/chats" component={Chatpage} />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/setAvatar" element={<SetAvatar />} />
+        <Route path="/" element={<Chat />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;
